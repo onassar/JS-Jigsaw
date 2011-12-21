@@ -14,8 +14,8 @@
  * <code>
  *     // instantiation
  *     var jigsaw = (new Jigsaw(
- *         $('thumbs'),
- *         $('thumbs').getElements('li')
+ *         $$('ul#parent').shift(),
+ *         $$('ul#parent').shift().getElements('li')
  *     ));
  *     
  *     // events
