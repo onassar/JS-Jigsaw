@@ -3,12 +3,30 @@
  * Jigsaw
  * 
  * MooTools based class that enables the filtering of a list of items through
- * position and opacity tweening.
+ * position and opacity tweening. Filtered elements are distinguished by their
+ * classes.
  * 
  * @author Oliver Nassar <onassar@gmail.com>
  * @notes  injects wrapper around element-contents to maintain any element
  *         css3-transitions without complications (eg. otherwise setting
- *         position would follow transition rather than explicit set call)
+ *         position would follow transition rather than explicit set call).
+ * @example
+ * <code>
+ *     // instantiation
+ *     var jigsaw = (new Jigsaw(
+ *         $('thumbs'),
+ *         $('thumbs').getElements('li')
+ *     ));
+ *     
+ *     // events
+ *     $$('nav').shift().getElements('a').addEvent(
+ *         'click',
+ *         function(event) {
+ *             event.stop();
+ *             jigsaw.filter(this.get('rel'));
+ *         }
+ *     );
+ * </code>
  */
 var Jigsaw = (new Class({
 
