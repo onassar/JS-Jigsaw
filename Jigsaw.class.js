@@ -6,10 +6,10 @@
  * position and opacity tweening. Filtered elements are distinguished by their
  * classes.
  * 
- * @author Oliver Nassar <onassar@gmail.com>
- * @notes  injects wrapper around element-contents to maintain any element
- *         css3-transitions without complications (eg. otherwise setting
- *         position would follow transition rather than explicit set call).
+ * @author  Oliver Nassar <onassar@gmail.com>
+ * @notes   injects wrapper around element-contents to maintain any element
+ *          css3-transitions without complications (eg. otherwise setting
+ *          position would follow transition rather than explicit set call).
  * @example
  * <code>
  *     // instantiation
@@ -31,50 +31,50 @@
 var Jigsaw = (new Class({
 
     /**
-     * Implements.
+     * Implements
      * 
      * @public
-     * @var Class
+     * @var    Class
      */
     Implements: Options,
 
     /**
-     * __coordinates. 
+     * __coordinates
      * 
      * @private
-     * @var Array
+     * @var     Array
      */
     __coordinates: [],
 
     /**
-     * __container. 
+     * __container
      * 
      * @private
-     * @var HTMLElement
+     * @var     HTMLElement
      */
     __container: null,
 
     /**
-     * __elements. 
+     * __elements
      * 
      * @private
-     * @var Array
+     * @var     Array
      */
     __elements: [],
 
     /**
-     * __wrappers. 
+     * __wrappers
      * 
      * @private
-     * @var Array
+     * @var     Array
      */
     __wrappers: [],
 
     /**
-     * options. 
+     * options
      * 
      * @public
-     * @var Object
+     * @var    Object
      */
     options: {
         duration: 500,
@@ -94,12 +94,12 @@ var Jigsaw = (new Class({
     },
 
     /**
-     * initialize. 
+     * initialize
      * 
      * @public
-     * @param HTMLElement container
-     * @param Array elements
-     * @param Object options
+     * @param  HTMLElement container
+     * @param  Array elements
+     * @param  Object options
      * @return void
      */
     initialize: function(container, elements, options) {
@@ -110,11 +110,13 @@ var Jigsaw = (new Class({
     },
 
     /**
-     * filter. Filters the elements passed in during instantiation based on a
-     *     class or array of classes that the element must much.
+     * filter
+     * 
+     * Filters the elements passed in during instantiation based on a class or
+     * array of classes that the element must much.
      * 
      * @public
-     * @param String|Array klass
+     * @param  String|Array klass
      * @return void
      */
     filter: function(klass) {
@@ -158,11 +160,13 @@ var Jigsaw = (new Class({
     },
 
     /**
-     * hide. Hides the passed in elements (setting their z-index to be less than
-     *     those that were shown, to therefore be behind them).
+     * hide
+     * 
+     * Hides the passed in elements (setting their z-index to be less than those
+     * that were shown, to therefore be behind them).
      * 
      * @public
-     * @param Array elements
+     * @param  Array elements
      * @return void
      */
     hide: function(elements) {
@@ -178,7 +182,7 @@ var Jigsaw = (new Class({
     },
 
     /**
-     * setup. 
+     * setup
      * 
      * @public
      * @return void
@@ -217,8 +221,8 @@ var Jigsaw = (new Class({
         
         /**
          * Closure had to be created for the morph-complete event to prevent the
-         *     <morph> variable from being evaluated as the final
-         *     reference/resource for each complete event.
+         * <morph> variable from being evaluated as the final reference/resource
+         * for each complete event.
          */
         this.__wrappers.each(function(wrapper) {
 
@@ -255,12 +259,14 @@ var Jigsaw = (new Class({
     },
 
     /**
-     * show. Shows the passed in elements (first marking as visible). The
-     *     z-index is set to be above those that were hidden (to ensure the
-     *     ability to click on them).
+     * show
+     * 
+     * Shows the passed in elements (first marking as visible). The z-index is
+     * set to be above those that were hidden (to ensure the ability to click on
+     * them).
      * 
      * @public
-     * @param Array elements
+     * @param  Array elements
      * @return void
      */
     show: function(elements) {
