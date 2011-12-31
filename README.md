@@ -21,6 +21,7 @@ based on their class, in an animated, &#039;fun&#039; way.
     );
 
 This example showcases the following case:
+
  - Markup exists with a ul#parent tag
  - This list contains a series of list items (li tags)
  - The page contains a nav tag with a a series of anchor tags
