@@ -24,7 +24,6 @@ $$('nav').shift().getElements('a').addEvent(
 ```
 
 This example showcases the following case:
-
  - Markup exists with a ul#parent tag
  - This list contains a series of list items (li tags)
  - The page contains a nav tag with a a series of anchor tags
