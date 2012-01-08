@@ -5,6 +5,8 @@ based on their class, in an animated, &#039;fun&#039; way.
 
 ### Sample Instantiation &amp; Filtering
 
+``` javascript
+
     // instantiation
     var jigsaw = (new Jigsaw(
         $$('ul#parent').shift(),
@@ -19,6 +21,7 @@ based on their class, in an animated, &#039;fun&#039; way.
             jigsaw.filter(this.get('rel'));
         }
     );
+```
 
 This example showcases the following case:
 
