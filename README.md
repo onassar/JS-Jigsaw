@@ -7,20 +7,20 @@ based on their class, in an animated, &#039;fun&#039; way.
 
 ``` javascript
 
-    // instantiation
-    var jigsaw = (new Jigsaw(
-        $$('ul#parent').shift(),
-        $$('ul#parent').shift().getElements('li')
-    ));
-    
-    // events
-    $$('nav').shift().getElements('a').addEvent(
-        'click',
-        function(event) {
-            event.stop();
-            jigsaw.filter(this.get('rel'));
-        }
-    );
+// instantiation
+var jigsaw = (new Jigsaw(
+    $$('ul#parent').shift(),
+    $$('ul#parent').shift().getElements('li')
+));
+
+// events
+$$('nav').shift().getElements('a').addEvent(
+    'click',
+    function(event) {
+        event.stop();
+        jigsaw.filter(this.get('rel'));
+    }
+);
 ```
 
 This example showcases the following case:
