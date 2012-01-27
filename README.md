@@ -33,3 +33,9 @@ This example showcases the following case:
 list item
  - Upon clicking on an anchor, the jigsaw begins, filtering out all list items
 which do not contain the class specific by the *rel* attribute value
+
+### Inspiration
+[razorjack](https://github.com/razorjack/) has a wicked plugin called
+[quicksand](https://github.com/razorjack/quicksand/). While not a direct port of
+it, it was showed to me by a friend, and acts as the source of the inspiration
+(albeit, a [MooTools](http://mootools.net/) version).
